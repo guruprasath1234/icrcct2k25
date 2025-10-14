@@ -211,6 +211,17 @@ function App() {
                   <CheckCircle className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Receive valuable feedback from peer reviewers</p>
                 </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
+                  <a
+                  href="mailto:icrcct2k25@sairamce.edu.in"
+                  className="text-blue-600 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  Mail your paper to: icrcct2k25@sairamce.edu.in
+                  </a>
+                </div>
               </div>
             </div>
             <div className="animate-fade-in-right">
@@ -239,7 +250,7 @@ function App() {
             </div>
           </div>
                    <button
-                className="bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="pt-1 bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                <a
                 href="https://forms.gle/qdWGK7idbRhGfCjF9"
