@@ -141,11 +141,14 @@ function App() {
               >
                 Join Paper Presentation
               </button>
-              <button
-                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105"
-              >
-                Register Now
-              </button>
+<a
+  href="https://forms.gle/qdWGK7idbRhGfCjF9"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-block text-center"
+>
+  Register Now
+</a>
             </div>
           </div>
 
@@ -258,7 +261,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-block text-center"
                 >
-                Apply for Pitchathon
+                Apply for Paper Presentation
                 </a>
               </button>
         </div>
@@ -431,7 +434,7 @@ function App() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center items-center place-items-center">
             {[
               { title: 'Pitch Submission', date: 'November 17, 2025', icon: BookOpen },
               // { title: 'Notification', date: 'November 20, 2024', icon: Mail },
@@ -439,10 +442,10 @@ function App() {
               { title: 'Conference Dates', date: 'December 15-16, 2024', icon: Award },
             ].map((item, index) => (
               <div
-                key={index}
-                className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl text-center hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
+              key={index}
+              className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl text-center hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
               >
-                <item.icon className="w-12 h-12 mx-auto mb-4" />
+              <item.icon className="w-12 h-12 mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                 <p className="text-2xl font-bold text-teal-200">{item.date}</p>
               </div>
@@ -486,13 +489,13 @@ function App() {
               <p className="text-gray-400"></p>
               <p className="text-gray-400">Sri Sairam College of Engineering, Anekal</p>
             <div>
-              <h3 className="pt-5 font-bold text-lg mb-4"> Conference Cooridinators</h3>
+              <h3 className="pt-5 font-bold text-lg mb-4"> Conference Coordinators</h3>
               <p className="text-gray-400 mb-2">Dr.Karthika K, AP/CSE</p>
               <p className="text-gray-400 mb-2">Prof.Suguna A ,AP/CSE</p>
             </div>
 <div>
   <div></div>
-              <h3 className="pt-5 font-bold text-lg mb-4"> Students Cooridinators</h3>
+              <h3 className="pt-5 font-bold text-lg mb-4"> Students Coordinators</h3>
               <p className="text-gray-400 mb-2">Guruprasath M - 4th year - CSE - 7550122892</p>
               <p className="text-gray-400 mb-2">Yeshwanth K - 3rd year - CSE - 9025191622</p>
 
