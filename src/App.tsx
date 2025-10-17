@@ -45,71 +45,100 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Navigation */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-lg' : 'bg-transparent'
-      }`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-2">
-              <Globe className={`w-8 h-8 ${scrolled ? 'text-blue-600' : 'text-white'}`} />
-              <span className={`font-bold text-xl ${scrolled ? 'text-gray-900' : 'text-white'}`}>
-                ICRCCT 2k25
-              </span>
-            </div>
-              <div className="hidden md:flex items-center space-x-4">
-          <a
-          href="/images/poster/icrcct2k25.pdf"  // replace with your file path
-          download="ICRCCT_2k25_Poster.pdf" // name of the downloaded file
-          className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-          >
+<nav
+  className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+    scrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+  }`}
+>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between items-center py-4">
+      {/* Logo Section */}
+      <div className="flex items-center space-x-2">
+        <Globe className={`w-8 h-8 ${scrolled ? 'text-blue-600' : 'text-white'}`} />
+        <span
+          className={`font-bold text-xl ${
+            scrolled ? 'text-gray-900' : 'text-white'
+          }`}
+        >
+          ICRCCT 2k25
+        </span>
+      </div>
+
+      {/* Desktop Download Button */}
+      <div className="hidden md:flex items-center space-x-4">
+        <a
+          href="/images/poster/icrcct2k25.pdf"
+          download="ICRCCT_2k25_Poster.pdf"
+          className={`px-4 py-2 rounded-lg transition-colors duration-300 ${
+            scrolled
+              ? 'bg-blue-600 text-white hover:bg-blue-700'
+              : 'bg-white/20 text-white hover:bg-white/30'
+          }`}
+        >
           Download Poster
-          </a>
-          </div>
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex space-x-8">
-              {navItems.map(item => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className={`transition-colors duration-200 ${
-                    scrolled
-                      ? activeSection === item.id ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'
-                      : activeSection === item.id ? 'text-white font-semibold' : 'text-white/90 hover:text-white'
-                  }`}
-                >
-                  {item.label}
-                </button>
-              ))}
-            </div>
+        </a>
+      </div>
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`md:hidden ${scrolled ? 'text-gray-900' : 'text-white'}`}
-            >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
+      {/* Desktop Navigation */}
+      <div className="hidden md:flex space-x-8">
+        {navItems.map((item) => (
+          <button
+            key={item.id}
+            onClick={() => scrollToSection(item.id)}
+            className={`transition-colors duration-200 ${
+              scrolled
+                ? activeSection === item.id
+                  ? 'text-blue-600 font-semibold'
+                  : 'text-gray-700 hover:text-blue-600'
+                : activeSection === item.id
+                ? 'text-white font-semibold'
+                : 'text-white/90 hover:text-white'
+            }`}
+          >
+            {item.label}
+          </button>
+        ))}
+      </div>
 
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <div className="md:hidden pb-4 bg-white rounded-lg shadow-lg mt-2">
-              {navItems.map(item => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
-                >
-                  {item.label}
-                </button>
-              ))}
-            </div>
-            
-          )}
-          
-        </div>
-        
-      </nav>
+      {/* Mobile Menu Button */}
+      <button
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className={`md:hidden ${scrolled ? 'text-gray-900' : 'text-white'}`}
+      >
+        {isMenuOpen ? (
+          <X className="w-6 h-6" />
+        ) : (
+          <Menu className="w-6 h-6" />
+        )}
+      </button>
+    </div>
+
+    {/* Mobile Navigation */}
+    {isMenuOpen && (
+      <div className="md:hidden pb-4 bg-white rounded-lg shadow-lg mt-2">
+        {navItems.map((item) => (
+          <button
+            key={item.id}
+            onClick={() => scrollToSection(item.id)}
+            className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+          >
+            {item.label}
+          </button>
+        ))}
+
+        {/* Mobile Download Button */}
+        <a
+          href="/images/poster/icrcct2k25.pdf"
+          download="ICRCCT_2k25_Poster.pdf"
+          className="block w-full text-left px-4 py-3 text-blue-600 font-semibold hover:bg-blue-50 transition-colors"
+        >
+          📥 Download Poster
+        </a>
+      </div>
+    )}
+  </div>
+</nav>
+
 
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
