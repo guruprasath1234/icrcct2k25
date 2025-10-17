@@ -191,161 +191,185 @@ function App() {
         </div>
       </section>
 
-      {/* About Paper Presentation Section */}
-      <section id="about-paper" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in-left">
-              <div className="inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                Research Excellence
-              </div>
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-                About Paper Presentation
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Welcome to the International Paper Presentation Conference, a premier event dedicated to advancing research and collaboration in the field of computer science. This conference aims to bring together scholars, researchers, and industry professionals from around the globe to share their insights, innovations, and findings.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Present cutting-edge research to a global audience</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Network with leading researchers and industry experts</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Receive valuable feedback from peer reviewers</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
-                  <a
-                  href="mailto:icrcct2k25@sairamce.edu.in"
-                  className="text-blue-600 hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                  Mail your paper to: icrcct2k25@sairamce.edu.in
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="animate-fade-in-right">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-2xl text-white transform hover:scale-105 transition-transform duration-300 shadow-xl">
-                  <BookOpen className="w-12 h-12 mb-4" />
-                  <h3 className="text-2xl font-bold mb-2">Research Papers</h3>
-                  <p className="text-blue-100">Share your groundbreaking research</p>
-                </div>
-                <div className="bg-gradient-to-br from-teal-500 to-teal-600 p-8 rounded-2xl text-white transform hover:scale-105 transition-transform duration-300 shadow-xl mt-8">
-                  <Award className="w-12 h-12 mb-4" />
-                  <h3 className="text-2xl font-bold mb-2">Best Paper Awards</h3>
-                  <p className="text-teal-100">Recognition for excellence</p>
-                </div>
-                <div className="bg-gradient-to-br from-purple-500 to-purple-600 p-8 rounded-2xl text-white transform hover:scale-105 transition-transform duration-300 shadow-xl -mt-8">
-                  <Users className="w-12 h-12 mb-4" />
-                  <h3 className="text-2xl font-bold mb-2">Peer Review</h3>
-                  <p className="text-purple-100">Rigorous evaluation process</p>
-                </div>
-                <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-8 rounded-2xl text-white transform hover:scale-105 transition-transform duration-300 shadow-xl">
-                  <Globe className="w-12 h-12 mb-4" />
-                  <h3 className="text-2xl font-bold mb-2">Global Reach</h3>
-                  <p className="text-orange-100">International platform</p>
-                </div>
-              </div>
-            </div>
-          </div>
-                   <button
-                className="pt-1 bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              >
-               <a
-                href="https://forms.gle/qdWGK7idbRhGfCjF9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-block text-center"
-                >
-                Submit your Paper
-                </a>
-              </button>
-        </div>
-      </section>
+      {/* =========================
+     About Paper Presentation
+========================= */}
+<section
+  id="about-paper"
+  className="relative py-24 bg-gradient-to-br from-white via-blue-50 to-blue-100 overflow-hidden"
+>
+  {/* Decorative background blobs */}
+  <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+  <div className="absolute bottom-0 right-0 w-72 h-72 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
 
-      {/* About Pitchathon Section */}
-      <section id="about-pitchathon" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 animate-fade-in-left">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-blue-500 rounded-3xl transform rotate-3"></div>
-                <div className="relative bg-white p-8 rounded-3xl shadow-2xl">
-                  <div className="grid grid-cols-2 gap-6">
-                    <div className="text-center p-6 bg-blue-50 rounded-xl">
-                      <Target className="w-10 h-10 text-blue-600 mx-auto mb-3" />
-                      <h4 className="font-bold text-gray-900 mb-2">Business Strategy</h4>
-                      <p className="text-sm text-gray-600">Refine your approach</p>
-                    </div>
-                    <div className="text-center p-6 bg-teal-50 rounded-xl">
-                      <Lightbulb className="w-10 h-10 text-teal-600 mx-auto mb-3" />
-                      <h4 className="font-bold text-gray-900 mb-2">Innovation</h4>
-                      <p className="text-sm text-gray-600">Creative solutions</p>
-                    </div>
-                    <div className="text-center p-6 bg-purple-50 rounded-xl">
-                      <TrendingUp className="w-10 h-10 text-purple-600 mx-auto mb-3" />
-                      <h4 className="font-bold text-gray-900 mb-2">Growth</h4>
-                      <p className="text-sm text-gray-600">Accelerate success</p>
-                    </div>
-                    <div className="text-center p-6 bg-orange-50 rounded-xl">
-                      <Users className="w-10 h-10 text-orange-600 mx-auto mb-3" />
-                      <h4 className="font-bold text-gray-900 mb-2">Networking</h4>
-                      <p className="text-sm text-gray-600">Connect with investors</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      {/* Left Content */}
+      <div className="animate-fade-in-left space-y-6">
+        <div className="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
+          Research Excellence
+        </div>
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
+          About <span className="bg-gradient-to-r from-blue-600 to-teal-500 bg-clip-text text-transparent">Paper Presentation</span>
+        </h2>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Welcome to the <strong>International Paper Presentation Conference</strong>, a premier platform advancing research and collaboration in computer science. Scholars, researchers, and industry experts from around the globe converge here to share innovation and insight.
+        </p>
+
+        <div className="space-y-4">
+          {[
+            "Present cutting-edge research to a global audience",
+            "Network with leading researchers and industry experts",
+            "Receive valuable feedback from peer reviewers",
+          ].map((text, i) => (
+            <div key={i} className="flex items-start space-x-3">
+              <CheckCircle className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
+              <p className="text-gray-700">{text}</p>
             </div>
-            <div className="order-1 lg:order-2 animate-fade-in-right">
-              <div className="inline-block bg-teal-100 text-teal-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                Entrepreneurship Excellence
-              </div>
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-                About Pitchathon
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                The Pitchathon provides a dynamic platform for participants to refine their business strategies, enhance their presentation skills, and gain valuable feedback from seasoned investors. Beyond potential funding, participants build connections with industry leaders and collaborators. The event fosters innovation, encouraging entrepreneurs to develop creative solutions and accelerate their journey toward success in the competitive marketplace.
-              </p>
-              <div className="bg-gradient-to-r from-teal-500 to-blue-600 text-white p-6 rounded-xl mb-6">
-                <h3 className="text-xl font-bold mb-3">What You'll Gain:</h3>
-                <ul className="space-y-2">
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                    <span>Expert feedback from seasoned investors</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                    <span>Potential funding opportunities</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                    <span>Network with industry leaders</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                    <span>Enhanced presentation skills</span>
-                  </li>
-                </ul>
-              </div>
-                <a
-                href="https://forms.gle/cPPuEKHizAX8TPjn8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-block text-center"
-                >
- Submit your Pitch                </a>
-            </div>
+          ))}
+          <div className="flex items-start space-x-3">
+            <CheckCircle className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
+            <a
+              href="mailto:icrcct2k25@sairamce.edu.in"
+              className="text-blue-700 font-medium hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mail your paper to: icrcct2k25@sairamce.edu.in
+            </a>
           </div>
         </div>
-      </section>
+
+        <a
+          href="https://forms.gle/qdWGK7idbRhGfCjF9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 inline-block bg-gradient-to-r from-blue-600 to-teal-500 text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+        >
+          Submit Your Paper
+        </a>
+      </div>
+
+      {/* Right Cards */}
+      <div className="animate-fade-in-right grid grid-cols-2 gap-8">
+        {[
+          {
+            icon: BookOpen,
+            title: "Research Papers",
+            text: "Share your groundbreaking research",
+            color: "from-blue-500 to-blue-700",
+          },
+          {
+            icon: Award,
+            title: "Best Paper Awards",
+            text: "Recognition for excellence",
+            color: "from-teal-500 to-teal-700",
+            mt: "mt-10",
+          },
+          {
+            icon: Users,
+            title: "Peer Review",
+            text: "Rigorous evaluation process",
+            color: "from-purple-500 to-purple-700",
+            mt: "-mt-10",
+          },
+          {
+            icon: Globe,
+            title: "Global Reach",
+            text: "An international platform",
+            color: "from-orange-500 to-red-600",
+          },
+        ].map(({ icon: Icon, title, text, color, mt }, i) => (
+          <div
+            key={i}
+            className={`bg-gradient-to-br ${color} p-8 rounded-3xl text-white shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 ${mt || ""
+              }`}
+          >
+            <Icon className="w-12 h-12 mb-4 opacity-90" />
+            <h3 className="text-2xl font-semibold mb-2">{title}</h3>
+            <p className="text-blue-100">{text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* =========================
+     About Pitchathon
+========================= */}
+<section
+  id="about-pitchathon"
+  className="relative py-24 bg-gradient-to-br from-gray-50 via-blue-50 to-teal-50 overflow-hidden"
+>
+  {/* Decorative shapes */}
+  <div className="absolute -top-10 right-0 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+  <div className="absolute bottom-10 left-0 w-72 h-72 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+
+  <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      {/* Image/Icons */}
+      <div className="order-2 lg:order-1 animate-fade-in-left relative">
+        <div className="relative bg-white p-10 rounded-3xl shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-300">
+          <div className="grid grid-cols-2 gap-8">
+            {[
+              { icon: Target, color: "text-blue-600", title: "Business Strategy", desc: "Refine your approach" },
+              { icon: Lightbulb, color: "text-teal-600", title: "Innovation", desc: "Creative solutions" },
+              { icon: TrendingUp, color: "text-purple-600", title: "Growth", desc: "Accelerate success" },
+              { icon: Users, color: "text-orange-600", title: "Networking", desc: "Connect with investors" },
+            ].map(({ icon: Icon, color, title, desc }, i) => (
+              <div key={i} className="text-center p-6 bg-gradient-to-br from-gray-50 to-white rounded-2xl hover:shadow-xl transition-all duration-300">
+                <Icon className={`w-10 h-10 ${color} mx-auto mb-3`} />
+                <h4 className="font-semibold text-gray-900 mb-1">{title}</h4>
+                <p className="text-sm text-gray-600">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Text Content */}
+      <div className="order-1 lg:order-2 animate-fade-in-right space-y-6">
+        <div className="inline-block bg-teal-100 text-teal-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
+          Entrepreneurship Excellence
+        </div>
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
+          About <span className="bg-gradient-to-r from-teal-500 to-blue-600 bg-clip-text text-transparent">Pitchathon</span>
+        </h2>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          The Pitchathon empowers participants to refine strategies, enhance pitching skills, and gain insights from investors. Beyond potential funding, it’s a space for <strong>innovation, growth, and connection</strong> with leaders shaping tomorrow’s industries.
+        </p>
+
+        <div className="bg-gradient-to-r from-teal-500 to-blue-600 text-white p-8 rounded-2xl shadow-xl">
+          <h3 className="text-xl font-semibold mb-3">What You'll Gain</h3>
+          <ul className="space-y-2 text-blue-50">
+            {[
+              "Expert feedback from seasoned investors",
+              "Potential funding opportunities",
+              "Network with industry leaders",
+              "Enhanced presentation skills",
+            ].map((item, i) => (
+              <li key={i} className="flex items-center space-x-2">
+                <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <a
+          href="https://forms.gle/cPPuEKHizAX8TPjn8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-gradient-to-r from-teal-600 to-blue-600 text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+        >
+          Submit Your Pitch
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Topics Section */}
       <section id="topics" className="py-20 bg-white">
@@ -424,40 +448,194 @@ function App() {
         </div>
       </section>
 
-            {/* Important Dates Section for pitchathon*/}
-      <section id="dates" className="py-20 bg-gradient-to-br from-blue-600 to-teal-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              Mark Your Calendar
-            </div>
-            <h2 className="text-4xl sm:text-5xl font-bold mb-4">Important Dates for Pitchathon</h2>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Stay updated with key deadlines and milestones
-            </p>
-          </div>
+{/* ===============================
+     Important Dates Section
+================================ */}
+<section id="dates" className="py-24 bg-gradient-to-br from-blue-600 to-teal-600 text-white relative overflow-hidden">
+  {/* Background glow accents */}
+  <div className="absolute inset-0 opacity-20">
+    <div className="absolute -top-20 -left-20 w-72 h-72 bg-teal-300 rounded-full blur-3xl"></div>
+    <div className="absolute bottom-0 right-0 w-72 h-72 bg-blue-400 rounded-full blur-3xl"></div>
+  </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center items-center place-items-center">
-            {[
-              { title: 'Pitch Submission', date: 'November 22, 2025', icon: BookOpen },
-              // { title: 'Notification', date: 'November 20, 2024', icon: Mail },
-              // { title: 'Registration Deadline', date: 'December 5, 2024', icon: Calendar },
-              { title: 'Pitching Date(offline)', date: 'December 22, 2024', icon: Award },
-            ].map((item, index) => (
-              <div
-              key={index}
-              className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl text-center hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
-              >
-              <item.icon className="w-12 h-12 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                <p className="text-2xl font-bold text-teal-200">{item.date}</p>
-              </div>
-            ))}
+  <div className="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
+    {/* Section Header */}
+    <div className="text-center mb-16 animate-fade-in-up">
+      <div className="inline-block bg-white/20 backdrop-blur-sm px-5 py-2 rounded-full text-sm font-semibold mb-4 shadow-sm">
+        Mark Your Calendar
+      </div>
+      <h2 className="text-4xl sm:text-5xl font-extrabold mb-4">Important Dates for Pitchathon</h2>
+      <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto">
+        Stay updated with key deadlines and milestones
+      </p>
+    </div>
+
+    {/* Dates Grid */}
+    <div className="flex flex-wrap justify-center gap-10 animate-fade-in-up">
+      {[
+        { title: 'Pitch Submission', date: 'November 22, 2025', icon: BookOpen },
+        { title: 'Pitching Date (Offline)', date: 'December 22, 2025', icon: Award },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="bg-white/10 backdrop-blur-sm p-10 rounded-2xl text-center w-72 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 shadow-lg"
+        >
+          <item.icon className="w-12 h-12 mx-auto mb-4 text-teal-200" />
+          <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+          <p className="text-2xl font-bold text-teal-100">{item.date}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
+    {/* Photo Gallery Section */}
+<section id="photos" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Title */}
+    <div className="text-center mb-16 animate-fade-in-up">
+      <div className="inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+Sri Sairam college of Engineering      </div>
+      <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+       Leadership Team
+      </h2>
+      <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+      </p>
+    </div>
+
+    {/* Leader Section */}
+    <div className="mb-20">
+      <h3 className="text-2xl font-semibold text-center text-gray-800 mb-10"></h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          { src: './images/principal.jpg', name: 'Dr. B Shadaksharappa', role: 'Principal' },
+          { src: '/images/coo.png', name: 'Dr. R Arun Kumar', role: 'Chief Operating Officer' },
+          { src: '/images/hod.png', name: 'Dr. Smitha J A', role: 'Head of Department' },
+        ].map((person, index) => (
+          <div
+            key={index}
+            className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 text-center"
+          >
+            <img
+              src={person.src}
+              alt={person.name}
+              className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center">
+              <p className="text-white font-bold text-xl">{person.name}</p>
+              <p className="text-gray-200 text-sm mt-1">{person.role}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Faculty Coordinators */}
+<div className="mb-20">
+  <h3 className="text-2xl font-semibold text-center text-gray-800 mb-10">
+    Faculty Coordinators
+  </h3>
+
+  <div className="flex flex-wrap justify-center gap-8">
+    {[
+      { src: '/images/suguna.jpg', name: 'Prof.Suguna A', role: 'Coordinator' },
+      { src: '/images/karthika.jpg', name: ' Dr.Karthika K,', role: 'Coordinator' },
+    ].map((person, index) => (
+      <div
+        key={index}
+        className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 text-center w-72"
+      >
+        <img
+          src={person.src}
+          alt={person.name}
+          className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center">
+          <p className="text-white font-bold text-lg">{person.name}</p>
+          <p className="text-gray-200 text-sm mt-1">{person.role}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+    {/* Student Coordinators */}
+    <div className="mb-20">
+      <h3 className="text-2xl font-semibold text-center text-gray-800 mb-10">Student Coordinators</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {[
+          { src: '/images/guru2.JPG', name: 'Guruprasath M', role: 'Conference Lead' },
+          { src: '/images/yeswanthv.jpg', name: 'Yeshwanth K', role: 'Conference Lead' },
+          { src: '/images/student2.jpg', name: '', role: '' },
+          { src: '/images/yeswanthk.jpg', name: 'Yashwanth V', role: 'Pitchathon Lead' },
+        ].map((person, index) => (
+          <div
+            key={index}
+            className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 text-center"
+          >
+            <img
+              src={person.src}
+              alt={person.name}
+              className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center">
+              <p className="text-white font-bold text-lg">{person.name}</p>
+              <p className="text-gray-200 text-sm mt-1">{person.role}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+{/* Photo Gallery Section */}
+{/* <section id="photos" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16 animate-fade-in-up">
+      <div className="inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+        Memories from ICRCCT
+      </div>
+      <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+        Glimpses of Innovation
+      </h2>
+      <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        A look back at the energy, creativity, and collaboration from past events.
+      </p>
+    </div> */}
+
+    {/* Image Grid */}
+    {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        '/images/student.png',
+        '/images/photo2.jpg',
+        '/images/photo3.jpg',
+        '/images/photo4.jpg',
+        '/images/photo5.jpg',
+        '/images/photo6.jpg',
+      ].map((src, index) => (
+        <div
+          key={index}
+          className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500"
+        >
+          <img
+            src={src}
+            alt={`Gallery ${index + 1}`}
+            className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+            <p className="text-white font-semibold text-lg">ICRCCT Moments</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section> */}
 
-      
+   </div>
+</section>
+
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
