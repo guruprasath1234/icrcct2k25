@@ -133,9 +133,9 @@ function App() {
  In Association with IEEE Computer Society, SSCE, Bangalore
               </span>
             </h1>
-            <div className="inline-block bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full mb-8">
+            {/* <div className="inline-block bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full mb-8">
               <p className="text-2xl sm:text-3xl font-bold text-white">ICRCCT 2k25</p>
-            </div>
+            </div> */}
             <p className="text-xl sm:text-2xl text-white/95 mb-8 max-w-4xl mx-auto font-light">
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -156,40 +156,44 @@ function App() {
             </div>
           </div>
 
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+
+        </div>
+                  <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
             <ChevronDown className="w-8 h-8 text-white" />
           </div>
-        </div>
       </section>
 
       {/* Conference Info Bar */}
-      <section className="bg-white shadow-lg sticky top-16 z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-            <div className="flex items-center justify-center space-x-3">
-              <Calendar className="w-6 h-6 text-blue-600" />
-              <div>
-                <p className="text-sm text-gray-600">Conference Date</p>
-                <p className="font-semibold text-gray-900">November 21 & 22, 2025</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-center space-x-3">
-              <MapPin className="w-6 h-6 text-blue-600" />
-              <div>
-                <p className="text-sm text-gray-600">Venue</p>
-                <p className="font-semibold text-gray-900">Sri Sairam College of Engineering</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-center space-x-3">
-              <Users className="w-6 h-6 text-blue-600" />
-              <div>
-                <p className="text-sm text-gray-600">Expected Participants</p>
-                <p className="font-semibold text-gray-900">500+ Global Attendees</p>
-              </div>
-            </div>
-          </div>
+      <section className="bg-white shadow-md sticky top-16 z-40">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-center">
+      <div className="flex items-center justify-center space-x-2">
+        <Calendar className="w-4 h-4 text-blue-600" />
+        <div>
+          <p className="text-xs text-gray-600">Conference Date</p>
+          <p className="text-sm font-semibold text-gray-900">Nov 21 & 22, 2025</p>
         </div>
-      </section>
+      </div>
+
+      <div className="flex items-center justify-center space-x-2">
+        <MapPin className="w-4 h-4 text-blue-600" />
+        <div>
+          <p className="text-xs text-gray-600">Venue</p>
+          <p className="text-sm font-semibold text-gray-900">Sri Sairam College of Engineering</p>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-center space-x-2">
+        <Users className="w-4 h-4 text-blue-600" />
+        <div>
+          <p className="text-xs text-gray-600">Expected Participants</p>
+          <p className="text-sm font-semibold text-gray-900">500+ Global Attendees</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* =========================
      About Paper Presentation
