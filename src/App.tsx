@@ -474,7 +474,7 @@ function App() {
     <div className="flex flex-wrap justify-center gap-10 animate-fade-in-up">
       {[
         { title: 'Pitch Submission', date: 'November 22, 2025', icon: BookOpen },
-        { title: 'Pitching Date (Offline)', date: 'December 22, 2025', icon: Award },
+        { title: 'Pitching Date (Offline)', date: 'November 22, 2025', icon: Award },
       ].map((item, index) => (
         <div
           key={index}
@@ -540,8 +540,8 @@ Sri Sairam college of Engineering      </div>
 
   <div className="flex flex-wrap justify-center gap-8">
     {[
-      { src: '/images/suguna.jpg', name: 'Prof.Suguna A', role: 'Coordinator' },
       { src: '/images/karthika.jpg', name: ' Dr.Karthika K,', role: 'Coordinator' },
+      { src: '/images/suguna.jpg', name: 'Prof.Suguna A', role: 'Coordinator' },
     ].map((person, index) => (
       <div
         key={index}
@@ -569,8 +569,9 @@ Sri Sairam college of Engineering      </div>
         {[
           { src: '/images/guru2.JPG', name: 'Guruprasath M', role: 'Conference Lead' },
           { src: '/images/yeswanthv.jpg', name: 'Yeshwanth K', role: 'Conference Lead' },
+           { src: '/images/yeswanthk.jpg', name: 'Yashwanth V', role: 'Pitchathon Lead' },
           { src: '/images/student2.jpg', name: '', role: '' },
-          { src: '/images/yeswanthk.jpg', name: 'Yashwanth V', role: 'Pitchathon Lead' },
+         
         ].map((person, index) => (
           <div
             key={index}
@@ -590,8 +591,8 @@ Sri Sairam college of Engineering      </div>
       </div>
     </div>
 
-{/* Photo Gallery Section */}
-{/* <section id="photos" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+{/* {*Photo Gallery Section */}
+<section id="photos" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="text-center mb-16 animate-fade-in-up">
       <div className="inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -603,17 +604,20 @@ Sri Sairam college of Engineering      </div>
       <p className="text-lg text-gray-600 max-w-3xl mx-auto">
         A look back at the energy, creativity, and collaboration from past events.
       </p>
-    </div> */}
+    </div> 
 
     {/* Image Grid */}
-    {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {[
-        '/images/student.png',
-        '/images/photo2.jpg',
-        '/images/photo3.jpg',
-        '/images/photo4.jpg',
-        '/images/photo5.jpg',
-        '/images/photo6.jpg',
+        '/images/gallery/image1.JPG',
+        '/images/gallery/image2.JPG',
+        '/images/gallery/image3.JPG',
+        '/images/gallery/image4.JPG',
+        '/images/gallery/image5.JPG',
+        '/images/gallery/image6.JPG',
+        '/images/gallery/image7.JPG',
+        '/images/gallery/image8.JPG',
+        '/images/gallery/image9.JPG',
       ].map((src, index) => (
         <div
           key={index}
@@ -631,7 +635,7 @@ Sri Sairam college of Engineering      </div>
       ))}
     </div>
   </div>
-</section> */}
+</section>
 
    </div>
 </section>
