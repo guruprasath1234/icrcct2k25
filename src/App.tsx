@@ -56,7 +56,15 @@ function App() {
                 ICRCCT 2k25
               </span>
             </div>
-
+              <div className="hidden md:flex items-center space-x-4">
+          <a
+          href="/images/poster/icrcct2k25.pdf"  // replace with your file path
+          download="ICRCCT_2k25_Poster.pdf" // name of the downloaded file
+          className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          >
+          Download Poster
+          </a>
+          </div>
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               {navItems.map(item => (
@@ -96,8 +104,11 @@ function App() {
                 </button>
               ))}
             </div>
+            
           )}
+          
         </div>
+        
       </nav>
 
       {/* Hero Section */}
@@ -683,8 +694,12 @@ Sri Sairam college of Engineering      </div>
               <p className="text-gray-400">Sri Sairam College of Engineering, Anekal</p>
             <div>
               <h3 className="pt-5 font-bold text-lg mb-4"> Conference Coordinators</h3>
+              
+              
+              <p className="text-gray-400 mb-2">Dr.Mahesh A, Prof/CSE</p>
+              <p className="text-gray-400 mb-2">Dr.Sumathi P, Assoc.Prof/CSE</p>
               <p className="text-gray-400 mb-2">Dr.Karthika K, AP/CSE</p>
-              <p className="text-gray-400 mb-2">Prof.Suguna A ,AP/CSE</p>
+              <p className="text-gray-400 mb-2">Prof.Suguna A , AP/CSE</p>
             </div>
 <div>
               <h3 className="pt-5 font-bold text-lg mb-4"> Students Coordinators(Paper Presentation)</h3>
