@@ -127,7 +127,11 @@ function App() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               International Conference on<br />
               <span className="text-teal-200">Recent Trends in Computing</span><br />
-              <span className="text-teal-200">and Communication Technologies</span>
+              <span className="text-teal-200">and Communication Technologies</span><br/>
+              <span className="text-base sm:text-lg md:text-xl lg:text-1xl font-semibold">
+                Department of Computer Science and Engineering
+ In Association with IEEE Computer Society, SSCE, Bangalore
+              </span>
             </h1>
             <div className="inline-block bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full mb-8">
               <p className="text-2xl sm:text-3xl font-bold text-white">ICRCCT 2k25</p>
@@ -261,7 +265,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-block text-center"
                 >
-                Apply for Paper Presentation
+                Submit your Paper
                 </a>
               </button>
         </div>
@@ -337,8 +341,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-block text-center"
                 >
-                Apply for Pitchathon
-                </a>
+ Submit your Pitch                </a>
             </div>
           </div>
         </div>
@@ -436,10 +439,10 @@ function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center items-center place-items-center">
             {[
-              { title: 'Pitch Submission', date: 'November 17, 2025', icon: BookOpen },
+              { title: 'Pitch Submission', date: 'November 22, 2025', icon: BookOpen },
               // { title: 'Notification', date: 'November 20, 2024', icon: Mail },
               // { title: 'Registration Deadline', date: 'December 5, 2024', icon: Calendar },
-              { title: 'Conference Dates', date: 'December 15-16, 2024', icon: Award },
+              { title: 'Pitching Date(offline)', date: 'December 22, 2024', icon: Award },
             ].map((item, index) => (
               <div
               key={index}
@@ -453,6 +456,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
@@ -478,10 +483,12 @@ function App() {
                     >
                       {item.label}
                     </button>
+                    
                   </li>
                 ))}
               </ul>
             </div>
+            
             <div>
               <h3 className="font-bold text-lg mb-4">Organized By</h3>
               <p className="text-gray-400 mb-2">Department of Computer Science & Engineering</p>
@@ -494,12 +501,14 @@ function App() {
               <p className="text-gray-400 mb-2">Prof.Suguna A ,AP/CSE</p>
             </div>
 <div>
-  <div></div>
-              <h3 className="pt-5 font-bold text-lg mb-4"> Students Coordinators</h3>
-              <p className="text-gray-400 mb-2">Guruprasath M - 4th year - CSE - 7550122892</p>
-              <p className="text-gray-400 mb-2">Yeshwanth K - 3rd year - CSE - 9025191622</p>
+              <h3 className="pt-5 font-bold text-lg mb-4"> Students Coordinators(Paper Presentation)</h3>
+              <p className="text-gray-400 mb-2">Guruprasath M - 4th year - CSE - 75501 22892</p>
+              <p className="text-gray-400 mb-2">Yeshwanth K - 3rd year - CSE - 90251 91622</p>
 
             </div>
+            <h3 className="pt-5 font-bold text-lg mb-4"> Students Coordinators (Pitchathon)</h3>
+              <p className="text-gray-400 mb-2">Dhviya Dharshini - 3rd year - CSE - 98805 56381</p>
+              <p className="text-gray-400 mb-2"> Yashwanth V - 3rd year - CSE - 9901289277</p>
             </div>
                         
           </div>
