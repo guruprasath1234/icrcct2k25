@@ -680,6 +680,92 @@ Sri Sairam college of Engineering      </div>
     </div>
   </div>
 </section>
+<section
+  id="faq"
+  className="py-20 bg-gradient-to-br from-teal-50 to-blue-50"
+>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16 animate-fade-in-up">
+      <div className="inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+        Have Questions?
+      </div>
+      <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+        Frequently Asked Questions
+      </h2>
+      <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        Get quick answers about paper submission, registration, and the
+        Pitchathon event.
+      </p>
+    </div>
+
+    {/* FAQ Items */}
+    <div className="max-w-4xl mx-auto space-y-6">
+      {[
+        {
+          q: "What is ICRCCT 2k25?",
+          a: "It is the International Conference on Recent Trends in Computing and Communication Technologies, organized by the Department of CSE in association with IEEE Computer Society, SSCE, Bangalore.",
+        },
+        {
+          q: "When and where will the conference be held?",
+          a: "The event will take place on November 21 & 22, 2025, at Sri Sairam College of Engineering, Anekal, Bengaluru.",
+        },
+        {
+          q: "What are the key areas of paper submission?",
+          a: "Communication & Networks, Data Science, Circuits & Systems, Industrial Automation, 5G Networks, Security & Privacy, Computer Vision, Machine Learning / Deep Learning, IoT and more.",
+        },
+        {
+          q: "What are the important dates?",
+          a: "Paper Submission: Nov 5, 2025 | Acceptance: Nov 10, 2025 | Registration Deadline: Nov 12, 2025.",
+        },
+        {
+          q: "What are the registration fees?",
+          a: "Internal Participants – ₹2000 per paper | External Participants – ₹2500 per paper.",
+        },
+        {
+          q: "What is the Pitchathon event about?",
+          a: "A platform to pitch project ideas or startups concisely to judges. 2 members per team | Format: PPT, PDF, or URL | Fee: ₹250 | Event Date: Nov 22, 2025.",
+        },
+        {
+          q: "Who can I contact for queries?",
+          a: "Student Coordinators: Guruprasath M – 75501 22892, Yeshwanth K – 90251 91622. Faculty Coordinators: Dr. Mahesh A, Dr. Sumathi P, Dr. Karthika K, Prof. Suguna A.",
+        },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition-all duration-300"
+        >
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">
+            {item.q}
+          </h3>
+          <p className="text-gray-600">{item.a}</p>
+        </div>
+      ))}
+    </div>
+
+    {/* WhatsApp Enquiry Link */}
+    <div className="text-center mt-12">
+      <a
+        href="https://chat.whatsapp.com/BJYDXOsaIIN4ZomX00WDpt?mode=wwt"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-all duration-300"
+      >
+Join the Whatsapp for further enquiries (Conference)    </a>
+          <div className="text-center mt-12">
+      <a
+        href="https://chat.whatsapp.com/FuNcPzSV0zSKmhFDwjo70E?mode=wwt"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-all duration-300"
+      >
+         Join the Whatsapp for further enquiries (Pitchathon)
+      </a>
+    </div>
+    </div>
+    
+  </div>
+</section>
+
 
    </div>
 </section>
