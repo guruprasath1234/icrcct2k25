@@ -241,105 +241,249 @@ function App() {
 <section
   id="about-paper"
   className="relative py-24 bg-gradient-to-br from-white via-blue-50 to-blue-100 overflow-hidden"
+>  
+  
+<section
+  id="about-paper"
+  className="relative py-24 bg-gradient-to-br from-white via-blue-50 to-blue-100 overflow-hidden"
 >
-  {/* Decorative background blobs */}
-  <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-  <div className="absolute bottom-0 right-0 w-72 h-72 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+  {(() => {
+    const [showModal, setShowModal] = useState(false);
 
-  <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-      {/* Left Content */}
-      <div className="animate-fade-in-left space-y-6">
-        <div className="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
-          Research Excellence
-        </div>
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
-          About <span className="bg-gradient-to-r from-blue-600 to-teal-500 bg-clip-text text-transparent">Paper Presentation</span>
-        </h2>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          Welcome to the <strong>International Paper Presentation Conference</strong>, a premier platform advancing research and collaboration in computer science. Scholars, researchers, and industry experts from around the globe converge here to share innovation and insight.
-        </p>
+    const handleButtonClick = () => setShowModal(true);
+    const handleYes = () => {
+      window.open("https://forms.gle/qdWGK7idbRhGfCjF9", "_blank");
+      setShowModal(false);
+    };
+    const handleNo = () => {
+      window.open("mailto:icrcct2k25@sairamce.edu.in", "_blank");
+      setShowModal(false);
+    };
+    const handleClose = () => setShowModal(false);
 
-        <div className="space-y-4">
-          {[
-            "Present cutting-edge research to a global audience",
-            "Network with leading researchers and industry experts",
-            "Receive valuable feedback from peer reviewers",
-          ].map((text, i) => (
-            <div key={i} className="flex items-start space-x-3">
-              <CheckCircle className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
-              <p className="text-gray-700">{text}</p>
+    return (
+      <>
+        {/* Decorative background blobs */}
+        <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+        <div className="absolute bottom-0 right-0 w-72 h-72 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left Content */}
+            <div className="animate-fade-in-left space-y-6">
+              <div className="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
+                Research Excellence
+              </div>
+              <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
+                About{" "}
+                <span className="bg-gradient-to-r from-blue-600 to-teal-500 bg-clip-text text-transparent">
+                  Paper Presentation
+                </span>
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Welcome to the{" "}
+                <strong>International Paper Presentation Conference</strong>, a
+                premier platform advancing research and collaboration in
+                computer science. Scholars, researchers, and industry experts
+                from around the globe converge here to share innovation and
+                insight.
+              </p>
+
+              <div className="space-y-4">
+                {[
+                  "Present cutting-edge research to a global audience",
+                  "Network with leading researchers and industry experts",
+                  "Receive valuable feedback from peer reviewers",
+                ].map((text, i) => (
+                  <div key={i} className="flex items-start space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <p className="text-gray-700">{text}</p>
+                  </div>
+                ))}
+                <div className="flex items-start space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <a
+                    href="mailto:icrcct2k25@sairamce.edu.in"
+                    className="text-blue-700 font-medium hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Mail your paper to: icrcct2k25@sairamce.edu.in
+                  </a>
+                </div>
+              </div>
+
+              <button
+                onClick={handleButtonClick}
+                className="mt-8 inline-block bg-gradient-to-r from-blue-600 to-teal-500 text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              >
+                Submit Your Paper
+              </button>
             </div>
-          ))}
-          <div className="flex items-start space-x-3">
-            <CheckCircle className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
-            <a
-              href="mailto:icrcct2k25@sairamce.edu.in"
-              className="text-blue-700 font-medium hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Mail your paper to: icrcct2k25@sairamce.edu.in
-            </a>
+
+            {/* Right Cards */}
+            <div className="animate-fade-in-right grid grid-cols-2 gap-8">
+              {[
+                {
+                  icon: BookOpen,
+                  title: "Research Papers",
+                  text: "Share your groundbreaking research",
+                  color: "from-blue-500 to-blue-700",
+                },
+                {
+                  icon: Award,
+                  title: "Best Paper Awards",
+                  text: "Recognition for excellence",
+                  color: "from-teal-500 to-teal-700",
+                  mt: "mt-10",
+                },
+                {
+                  icon: Users,
+                  title: "Peer Review",
+                  text: "Rigorous evaluation process",
+                  color: "from-purple-500 to-purple-700",
+                  mt: "-mt-10",
+                },
+                {
+                  icon: Globe,
+                  title: "Global Reach",
+                  text: "An international platform",
+                  color: "from-orange-500 to-red-600",
+                },
+              ].map(({ icon: Icon, title, text, color, mt }, i) => (
+                <div
+                  key={i}
+                  className={`bg-gradient-to-br ${color} p-8 rounded-3xl text-white shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 ${mt || ""
+                    }`}
+                >
+                  <Icon className="w-12 h-12 mb-4 opacity-90" />
+                  <h3 className="text-2xl font-semibold mb-2">{title}</h3>
+                  <p className="text-blue-100">{text}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
-        <a
-          href="https://forms.gle/qdWGK7idbRhGfCjF9"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-8 inline-block bg-gradient-to-r from-blue-600 to-teal-500 text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-        >
-          Submit Your Paper
-        </a>
+        {/* Popup Modal */}
+        {showModal && (
+          <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+            <div className="bg-white p-8 rounded-3xl shadow-2xl text-center max-w-md mx-auto relative">
+              
+              {/* Close "X" button */}
+              <button
+                onClick={handleClose}
+                className="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-2xl font-bold"
+              >
+                &times;
+              </button>
+
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                Did you mail the paper and receive the acceptance mail?
+              </h3>
+              <div className="flex justify-center space-x-6 mt-6">
+                <button
+                  onClick={handleYes}
+                  className="bg-green-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition-all"
+                >
+                  Yes
+                </button>
+                <button
+                  onClick={handleNo}
+                  className="bg-red-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-red-600 transition-all"
+                >
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+      </>
+    );
+  })()}
+</section>
+
+
+  
+</section>
+<section id="timeline" className="bg-gradient-to-r from-blue-50 to-teal-50 py-20">
+  <div className="max-w-6xl mx-auto px-6 text-center">
+    <h2 className="text-4xl font-bold text-gray-800 mb-16">Conference Process</h2>
+
+    <div className="flex flex-col md:flex-row justify-between items-center">
+      {/* Step 1 */}
+      <div className="flex flex-col items-center mb-12 md:mb-0 md:w-1/4">
+        <div className="bg-white border-4 border-blue-500 rounded-full w-16 h-16 flex items-center justify-center shadow-lg mb-6 text-2xl font-bold text-blue-600">
+          1
+        </div>
+        <h3 className="text-xl font-semibold text-gray-800">Send Paper</h3>
+        <p className="text-gray-600 mt-2">
+          Send your paper to the provided Mail ID within November 5, 2025.
+        </p>
       </div>
 
-      {/* Right Cards */}
-      <div className="animate-fade-in-right grid grid-cols-2 gap-8">
-        {[
-          {
-            icon: BookOpen,
-            title: "Research Papers",
-            text: "Share your groundbreaking research",
-            color: "from-blue-500 to-blue-700",
-          },
-          {
-            icon: Award,
-            title: "Best Paper Awards",
-            text: "Recognition for excellence",
-            color: "from-teal-500 to-teal-700",
-            mt: "mt-10",
-          },
-          {
-            icon: Users,
-            title: "Peer Review",
-            text: "Rigorous evaluation process",
-            color: "from-purple-500 to-purple-700",
-            mt: "-mt-10",
-          },
-          {
-            icon: Globe,
-            title: "Global Reach",
-            text: "An international platform",
-            color: "from-orange-500 to-red-600",
-          },
-        ].map(({ icon: Icon, title, text, color, mt }, i) => (
-          <div
-            key={i}
-            className={`bg-gradient-to-br ${color} p-8 rounded-3xl text-white shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 ${mt || ""
-              }`}
-          >
-            <Icon className="w-12 h-12 mb-4 opacity-90" />
-            <h3 className="text-2xl font-semibold mb-2">{title}</h3>
-            <p className="text-blue-100">{text}</p>
-          </div>
-        ))}
+      {/* Step 2 */}
+      <div className="flex flex-col items-center mb-12 md:mb-0 md:w-1/4">
+        <div className="bg-white border-4 border-green-500 rounded-full w-16 h-16 flex items-center justify-center shadow-lg mb-6 text-2xl font-bold text-green-600">
+          2
+        </div>
+        <h3 className="text-xl font-semibold text-gray-800">Get Acceptance Mail</h3>
+        <p className="text-gray-600 mt-2">
+          Receive a confirmation email once your paper is accepted.
+        </p>
+      </div>
+
+      {/* Step 3 */}
+      <div className="flex flex-col items-center mb-12 md:mb-0 md:w-1/4">
+        <div className="bg-white border-4 border-yellow-500 rounded-full w-16 h-16 flex items-center justify-center shadow-lg mb-6 text-2xl font-bold text-yellow-600">
+          3
+        </div>
+        <h3 className="text-xl font-semibold text-gray-800">Register for Conference</h3>
+        <p className="text-gray-600 mt-2">
+          Complete your registration before the deadline.
+        </p>
+      </div>
+
+      {/* Step 4 */}
+      <div className="flex flex-col items-center md:w-1/4">
+        <div className="bg-white border-4 border-purple-500 rounded-full w-16 h-16 flex items-center justify-center shadow-lg mb-6 text-2xl font-bold text-purple-600">
+          4
+        </div>
+        <h3 className="text-xl font-semibold text-gray-800">Attend the Event</h3>
+        <p className="text-gray-600 mt-2">
+          Join the conference, present your work, and network with peers.
+        </p>
       </div>
     </div>
   </div>
-  
-  
 </section>
+
 
 {/* =========================
      About Pitchathon
@@ -373,6 +517,7 @@ function App() {
           </div>
         </div>
       </div>
+      
 
       {/* Text Content */}
       <div className="order-1 lg:order-2 animate-fade-in-right space-y-6">
