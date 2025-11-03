@@ -272,80 +272,91 @@ function App() {
             {/* Left Content */}
             <div className="animate-fade-in-left space-y-6">
               <div className="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
-                Research Excellence
+              Research Excellence
               </div>
               <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
-                About{" "}
-                <span className="bg-gradient-to-r from-blue-600 to-teal-500 bg-clip-text text-transparent">
-                  Paper Presentation
-                </span>
+              About{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-teal-500 bg-clip-text text-transparent">
+                Paper Presentation
+              </span>
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Welcome to the{" "}
-                <strong>International Paper Presentation Conference</strong>, a
-                premier platform advancing research and collaboration in
-                computer science. Scholars, researchers, and industry experts
-                from around the globe converge here to share innovation and
-                insight.
+              Welcome to the{" "}
+              <strong>International Paper Presentation Conference</strong>, a
+              premier platform advancing research and collaboration in
+              computer science. Scholars, researchers, and industry experts
+              from around the globe converge here to share innovation and
+              insight.
               </p>
 
               <div className="space-y-4">
-                {[
-                  "Present cutting-edge research to a global audience",
-                  "Network with leading researchers and industry experts",
-                  "Receive valuable feedback from peer reviewers",
-                ].map((text, i) => (
-                  <div key={i} className="flex items-start space-x-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    <p className="text-gray-700">{text}</p>
-                  </div>
-                ))}
-                <div className="flex items-start space-x-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  <a
-                    href="mailto:icrcct2k25@sairamce.edu.in"
-                    className="text-blue-700 font-medium hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Mail your paper to: icrcct2k25@sairamce.edu.in
-                  </a>
+              {[
+                "Present cutting-edge research to a global audience",
+                "Network with leading researchers and industry experts",
+                "Receive valuable feedback from peer reviewers",
+              ].map((text, i) => (
+                <div key={i} className="flex items-start space-x-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <p className="text-gray-700">{text}</p>
                 </div>
+              ))}
+              <div className="flex items-start space-x-3">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+                </svg>
+                <a
+                href="mailto:icrcct2k25@sairamce.edu.in"
+                className="text-blue-700 font-medium hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Mail your paper to: icrcct2k25@sairamce.edu.in
+                </a>
+              </div>
               </div>
 
+              <div className="mt-8 flex flex-wrap gap-4">
               <button
                 onClick={handleButtonClick}
-                className="mt-8 inline-block bg-gradient-to-r from-blue-600 to-teal-500 text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-teal-500 text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
-                Submit Your Paper
+                Register for conference
               </button>
+
+              {/* <a
+                href="/images/poster/paper_template.doc"
+                download
+                className="inline-flex items-center justify-center bg-gradient-to-r from-teal-500 to-green-400 text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              >
+                Download Template
+              </a> */}
+              </div>
             </div>
+            
 
             {/* Right Cards */}
             <div className="animate-fade-in-right grid grid-cols-2 gap-8">
