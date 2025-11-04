@@ -347,16 +347,11 @@ function App() {
                 Register for conference
               </button>
 
-              {/* <a
-                href="/images/poster/paper_template.doc"
-                download
-                className="inline-flex items-center justify-center bg-gradient-to-r from-teal-500 to-green-400 text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-              >
-                Download Template
-              </a> */}
+
               </div>
             </div>
             
+
 
             {/* Right Cards */}
             <div className="animate-fade-in-right grid grid-cols-2 gap-8">
@@ -690,6 +685,7 @@ function App() {
     </div>
   </div>
 </section>
+
 
 
 
