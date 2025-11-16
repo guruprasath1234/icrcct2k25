@@ -512,7 +512,7 @@ function App() {
               { icon: Target, color: "text-blue-600", title: "Business Strategy", desc: "Refine your approach" },
               { icon: Lightbulb, color: "text-teal-600", title: "Innovation", desc: "Creative solutions" },
               { icon: TrendingUp, color: "text-purple-600", title: "Growth", desc: "Accelerate success" },
-              { icon: Users, color: "text-orange-600", title: "Networking", desc: "Connect with investors" },
+              { icon: Users, color: "text-orange-600", title: "Networking", desc: "" },
             ].map(({ icon: Icon, color, title, desc }, i) => (
               <div key={i} className="text-center p-6 bg-gradient-to-br from-gray-50 to-white rounded-2xl hover:shadow-xl transition-all duration-300">
                 <Icon className={`w-10 h-10 ${color} mx-auto mb-3`} />
